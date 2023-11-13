@@ -1,0 +1,29 @@
+<body>
+  <div>Crédito</div>
+  <div class="popup-container" (click)="closePopupOutside($event)">
+    <div class="popup">
+      <!-- Seus campos de texto e elementos do popup -->
+      <button class="close-button" (click)="close()">Fechar</button>
+    </div>
+  </div>
+
+  <div class="card flex flex-column md:flex-row gap-3">
+    <div class="p-inputgroup">
+        <input pInputText placeholder="8888-8888-8888-8888" />
+    </div>
+
+    <div class="p-inputgroup">
+      <input type="text" pInputText placeholder="Nome" />
+    </div>
+
+    <div class="p-inputgroup">
+        <input type="text" pInputText placeholder="CVV" />
+    </div>
+
+    <div class="p-inputgroup">
+        <input type="text" pInputText placeholder="Vencimento" />
+    </div>
+  </div>
+
+  <p-button label="Salvar" icon="pi pi-check"></p-button>
+</body>  
